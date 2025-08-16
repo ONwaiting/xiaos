@@ -198,7 +198,8 @@
     }
 
     #clock {
-      width: 22px;
+      width: 40px;
+      text-align: center;
       margin-right: 16px;
     }
 
@@ -689,12 +690,7 @@
       var result = "第 <span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒";
       $("#clock").html(result);
     }
-    var together = new Date();
-    together.setFullYear(2025, 04, 12);
-    together.setHours(0);
-    together.setMinutes(0);
-    together.setSeconds(0);
-    together.setMilliseconds(0);
+    var together = new Date('2025-04-12');
 
     $("#clock-box").fadeIn(500);
     timeElapse(together);
@@ -709,7 +705,7 @@
       setTimeout(animate, 25000);
     }
 
-    animate()
+    // animate()
   </script>
 </body>
 
